@@ -1,10 +1,10 @@
 # Práctica 2. Typescript
 
-#### Curso Samsung Desarrolladoras
+##### Curso Samsung Desarrolladoras
 
-##### npm install
+#### npm install
 
-##### npm run dev
+#### npm run dev
 
 ### Plateamiento del ejercicio
 
