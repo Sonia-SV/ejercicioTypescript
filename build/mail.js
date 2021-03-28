@@ -5,33 +5,24 @@ System.register([], function (exports_1, context_1) {
     return {
         setters: [],
         execute: function () {
-            Mail = (function () {
-                function Mail(tipo, direccion) {
+            Mail = class Mail {
+                constructor(tipo, direccion) {
                     this._tipo = tipo;
                     this._direccion = direccion;
                 }
-                Object.defineProperty(Mail.prototype, "direccion", {
-                    get: function () {
-                        return this._direccion;
-                    },
-                    set: function (direccion) {
-                        this._direccion = direccion;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Mail.prototype, "tipo", {
-                    get: function () {
-                        return this._tipo;
-                    },
-                    set: function (tipo) {
-                        this._tipo = tipo;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                return Mail;
-            }());
+                get direccion() {
+                    return this._direccion;
+                }
+                get tipo() {
+                    return this._tipo;
+                }
+                set direccion(direccion) {
+                    this._direccion = direccion;
+                }
+                set tipo(tipo) {
+                    this._tipo = tipo;
+                }
+            };
             exports_1("Mail", Mail);
         }
     };

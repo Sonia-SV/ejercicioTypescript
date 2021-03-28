@@ -5,8 +5,8 @@ System.register([], function (exports_1, context_1) {
     return {
         setters: [],
         execute: function () {
-            Persona = (function () {
-                function Persona(nombre, apellidos, edad, dni, cumpleanos, colorFavorito, sexo, direcciones, mails, telefonos, notas) {
+            Persona = class Persona {
+                constructor(nombre, apellidos, edad, dni, cumpleanos, colorFavorito, sexo, direcciones, mails, telefonos, notas) {
                     this._nombre = nombre;
                     this._apellidos = apellidos;
                     this._edad = edad;
@@ -19,118 +19,82 @@ System.register([], function (exports_1, context_1) {
                     this._telefonos = telefonos;
                     this._notas = notas;
                 }
-                Object.defineProperty(Persona.prototype, "nombre", {
-                    get: function () {
-                        return this._nombre;
-                    },
-                    set: function (nombre) {
-                        this._nombre = nombre;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Persona.prototype, "apellidos", {
-                    get: function () {
-                        return this._apellidos;
-                    },
-                    set: function (apellidos) {
-                        this._apellidos = apellidos;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Persona.prototype, "edad", {
-                    get: function () {
-                        return this._edad;
-                    },
-                    set: function (edad) {
-                        this._edad = edad;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Persona.prototype, "dni", {
-                    get: function () {
-                        return this._dni;
-                    },
-                    set: function (dni) {
-                        this._dni = dni;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Persona.prototype, "cumpleanos", {
-                    get: function () {
-                        return this._cumpleanos;
-                    },
-                    set: function (cumpleanos) {
-                        this._cumpleanos = cumpleanos;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Persona.prototype, "colorFavorito", {
-                    get: function () {
-                        return this._colorFavorito;
-                    },
-                    set: function (colorFavorito) {
-                        this._colorFavorito = colorFavorito;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Persona.prototype, "sexo", {
-                    get: function () {
-                        return this._sexo;
-                    },
-                    set: function (sexo) {
-                        this._sexo = sexo;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Persona.prototype, "direcciones", {
-                    get: function () {
-                        return this._direcciones;
-                    },
-                    set: function (direcciones) {
-                        this._direcciones = direcciones;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Persona.prototype, "mails", {
-                    get: function () {
-                        return this._mails;
-                    },
-                    set: function (mails) {
-                        this._mails = mails;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Persona.prototype, "telefonos", {
-                    get: function () {
-                        return this._telefonos;
-                    },
-                    set: function (telefonos) {
-                        this._telefonos = telefonos;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Persona.prototype, "notas", {
-                    get: function () {
-                        return this._notas;
-                    },
-                    set: function (notas) {
-                        this._notas = notas;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                return Persona;
-            }());
+                get nombre() {
+                    return this._nombre;
+                }
+                get apellidos() {
+                    return this._apellidos;
+                }
+                get edad() {
+                    return this._edad;
+                }
+                get dni() {
+                    return this._dni;
+                }
+                get cumpleanos() {
+                    return this._cumpleanos;
+                }
+                get colorFavorito() {
+                    return this._colorFavorito;
+                }
+                get sexo() {
+                    return this._sexo;
+                }
+                get direcciones() {
+                    return this._direcciones;
+                }
+                get mails() {
+                    return this._mails;
+                }
+                get telefonos() {
+                    return this._telefonos;
+                }
+                get notas() {
+                    return this._notas;
+                }
+                set nombre(nombre) {
+                    this._nombre = nombre;
+                }
+                set apellidos(apellidos) {
+                    this._apellidos = apellidos;
+                }
+                set edad(edad) {
+                    this._edad = edad;
+                }
+                set dni(dni) {
+                    this._dni = dni;
+                }
+                set cumpleanos(cumpleanos) {
+                    this._cumpleanos = cumpleanos;
+                }
+                set colorFavorito(colorFavorito) {
+                    this._colorFavorito = colorFavorito;
+                }
+                set sexo(sexo) {
+                    this._sexo = sexo;
+                }
+                set direcciones(direcciones) {
+                    this._direcciones = direcciones;
+                }
+                set mails(mails) {
+                    this._mails = mails;
+                }
+                set telefonos(telefonos) {
+                    this._telefonos = telefonos;
+                }
+                set notas(notas) {
+                    this._notas = notas;
+                }
+                agregarNuevaDireccion(direccion) {
+                    this._direcciones.push(direccion);
+                }
+                agregarNuevoTelefono(telefono) {
+                    this._telefonos.push(telefono);
+                }
+                agregarNuevoMail(mail) {
+                    this._mails.push(mail);
+                }
+            };
             exports_1("Persona", Persona);
         }
     };

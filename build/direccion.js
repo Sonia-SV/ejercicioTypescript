@@ -5,8 +5,8 @@ System.register([], function (exports_1, context_1) {
     return {
         setters: [],
         execute: function () {
-            Direccion = (function () {
-                function Direccion(calle, numero, piso, letra, codigoPostal, poblacion, provincia) {
+            Direccion = class Direccion {
+                constructor(calle, numero, piso, letra, codigoPostal, poblacion, provincia) {
                     this._calle = calle;
                     this._numero = numero;
                     this._piso = piso;
@@ -15,78 +15,49 @@ System.register([], function (exports_1, context_1) {
                     this._poblacion = poblacion;
                     this._provincia = provincia;
                 }
-                Object.defineProperty(Direccion.prototype, "calle", {
-                    get: function () {
-                        return this._calle;
-                    },
-                    set: function (calle) {
-                        this._calle = calle;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Direccion.prototype, "numero", {
-                    get: function () {
-                        return this._numero;
-                    },
-                    set: function (numero) {
-                        this._numero = numero;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Direccion.prototype, "piso", {
-                    get: function () {
-                        return this._piso;
-                    },
-                    set: function (piso) {
-                        this._piso = piso;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Direccion.prototype, "letra", {
-                    get: function () {
-                        return this._letra;
-                    },
-                    set: function (letra) {
-                        this._letra = letra;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Direccion.prototype, "codigoPostal", {
-                    get: function () {
-                        return this._codigoPostal;
-                    },
-                    set: function (codigoPostal) {
-                        this._codigoPostal = codigoPostal;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Direccion.prototype, "poblacion", {
-                    get: function () {
-                        return this._poblacion;
-                    },
-                    set: function (poblacion) {
-                        this._poblacion = poblacion;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                Object.defineProperty(Direccion.prototype, "provincia", {
-                    get: function () {
-                        return this._provincia;
-                    },
-                    set: function (provincia) {
-                        this._provincia = provincia;
-                    },
-                    enumerable: false,
-                    configurable: true
-                });
-                return Direccion;
-            }());
+                get calle() {
+                    return this._calle;
+                }
+                get numero() {
+                    return this._numero;
+                }
+                get piso() {
+                    return this._piso;
+                }
+                get letra() {
+                    return this._letra;
+                }
+                get codigoPostal() {
+                    return this._codigoPostal;
+                }
+                get poblacion() {
+                    return this._poblacion;
+                }
+                get provincia() {
+                    return this._provincia;
+                }
+                set calle(calle) {
+                    this._calle = calle;
+                }
+                set numero(numero) {
+                    this._numero = numero;
+                }
+                set piso(piso) {
+                    this._piso = piso;
+                }
+                set letra(letra) {
+                    this._letra = letra;
+                }
+                set codigoPostal(codigoPostal) {
+                    this._codigoPostal = codigoPostal;
+                }
+                set poblacion(poblacion) {
+                    this._poblacion = poblacion;
+                }
+                set provincia(provincia) {
+                    this._provincia = provincia;
+                }
+            };
             exports_1("Direccion", Direccion);
         }
     };

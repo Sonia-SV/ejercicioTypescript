@@ -29,7 +29,7 @@ export class Persona {
     this._notas = notas;
   }
 
-    get nombre() {
+  get nombre() {
     return this._nombre;
   }
 
@@ -117,4 +117,15 @@ export class Persona {
     this._notas = notas;
   }
 
+  agregarNuevaDireccion(direccion:Direccion) {
+    this._direcciones.push(direccion)
+  }
+
+  agregarNuevoTelefono(telefono:Telefono) {
+    this._telefonos.push(telefono)
+  }
+
+  agregarNuevoMail(mail:Mail) {
+    this._mails.push(mail)
+  }
 }

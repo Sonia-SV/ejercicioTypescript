@@ -2,6 +2,12 @@
 
 #### Curso Samsung Desarrolladoras
 
+##### npm install
+
+##### npm run dev
+
+### Plateamiento del ejercicio
+
 Se propone realizar unas clases para almacenar la lógica de una agenda con los datos personales de los individuos: direcciones, teléfonos, mails... Cada clase ha de crearse en un archivo TypeScript diferente.
 
 | Persona        |     | Direccion     |     | Teléfono |     | Mail      |
