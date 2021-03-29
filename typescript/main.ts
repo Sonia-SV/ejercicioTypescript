@@ -52,8 +52,6 @@ const datosMaria = new Persona(
   "Trabaja en la localidad de la segunda residencia"
 );
 
-console.log(datosMaria);
-
 const primeraResidenciaFederico = new Direccion(
   "Calle Hierbabuena",
   2,
@@ -113,8 +111,6 @@ const datosFederico = new Persona(
   "Tiene la segunda residencia alquilada todo el año"
 );
 
-console.log(datosFederico);
-
 const primeraResidenciaIsmael = new Direccion(
   "Calle Juan Ramón Jiménez",
   19,
@@ -169,6 +165,9 @@ const datosIsmael = new Persona(
   "La segunda residencia es de alquiler"
 );
 
+console.log("Contactos antes del cambio:");
+console.log(datosMaria);
+console.log(datosFederico);
 console.log(datosIsmael);
 
 const agenda: Array<Persona> = new Array(datosMaria, datosFederico, datosIsmael);
@@ -201,4 +200,7 @@ personaAEditar.agregarNuevaDireccion(nuevaDireccion);
 personaAEditar.agregarNuevoMail(nuevoMail);
 personaAEditar.agregarNuevoTelefono(nuevoTelefono);
 
+console.log("Contactos después del cambio:");
 console.log(datosMaria);
+console.log(datosFederico);
+console.log(datosIsmael);
